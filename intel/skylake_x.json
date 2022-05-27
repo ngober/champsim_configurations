@@ -1,0 +1,25 @@
+{
+    "ooo_cpu": [
+        {
+            "frequency": 4000,
+            "branch_predictor": "hashed_perceptron",
+
+            "L1I": { "sets": 64, "ways": 8, "replacement": "lru" },
+            "L1D": { "sets": 64, "ways": 8, "latency": 4, "replacement": "lru", "prefetcher": "ip_stride" },
+            "L2C": { "sets": 1024, "ways": 16, "latency": 14 },
+            "ITLB": { "sets": 1, "ways": 4, "hit_latency": 1, "fill_latency": 6 },
+            "DTLB": { "sets": 1, "ways", 4, "hit_latency": 1, "fill_latency": 6 },
+            "STLB": { "sets": 256, "ways", 5, "latency": 3, "mshr_size": 4 },
+
+            "lq_width": 2, "sq_width": 1, "lq_size": 32, "sq_size": 16, "rob_size": 256,
+
+            "fetch_width": 4, "decode_width": 4, "dispatch_width": 4, "execute_width": 6,
+            "decode_latency": 2, "dispatch_latency": 2
+        }
+    ],
+
+    "LLC": { "sets": 8192, "ways": 16, "latency": 34 },
+
+    "virtual_memory": { "size": 1099511627776 }
+}
+
