@@ -7,8 +7,8 @@
             "L1D": { "sets": 256, "ways": 4, "latency": 4, "replacement": "lru", "prefetcher": "ip_stride" },
             "L2C": { "sets": 1024, "ways": 8, "hit_latency": 4 },
             "ITLB": { "sets": 1, "ways": 48, "latency": 1 },
-            "DTLB": { "sets": 1, "ways", 48, "latency": 1 },
-            "STLB": { "sets": 256, "ways", 5, "latency": 3, "mshr_size": 4 },
+            "DTLB": { "sets": 1, "ways": 48, "latency": 1 },
+            "STLB": { "sets": 256, "ways": 5, "latency": 3, "mshr_size": 4 },
 
             "lq_width": 2, "sq_width": 1, "lq_size": 32, "sq_size": 16,
 
